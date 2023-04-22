@@ -1,4 +1,4 @@
-let height = 5;
+const height = Number(prompt("Nhập chiều cao của tam giác: "))
 
 for (let i = height; i >= 1; i--) {
     let line = " ";
