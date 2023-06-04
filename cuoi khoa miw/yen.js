@@ -227,3 +227,29 @@ function seekUpdate() {
 }
 // Load the first track in the tracklist
 loadTrack(track_index);
+
+//LYRICS
+const url = 'https://l-yrics.p.rapidapi.com/?song=Ashes&artist=Stellar';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '73b7d28d60msh203041ceb7dcf6ep189174jsn30a3067fa147',
+		'X-RapidAPI-Host': 'l-yrics.p.rapidapi.com'
+	}
+};
+
+fetch(url,options).then((respons) => {
+    return response.json();
+}).then((data) => {
+    
+});
+
+//WEEKLY HOT
+const url = 'https://billboard2.p.rapidapi.com/billboard_global_200?date=2020-09-19';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '73b7d28d60msh203041ceb7dcf6ep189174jsn30a3067fa147',
+		'X-RapidAPI-Host': 'billboard2.p.rapidapi.com'
+	}
+};

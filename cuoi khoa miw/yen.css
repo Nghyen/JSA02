@@ -6,6 +6,8 @@
     box-sizing: border-box;
     
 }
+
+/* Bên trái */
 .wrapper {
     position: relative;
 }
@@ -14,14 +16,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 20%;
     height: 100vh;
     position: fixed;
     background-color: #f9bec7;
     font-family: 'Poppins' , sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .picture {
@@ -30,6 +31,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    margin-top: 10%;
 }
 .buttons {
     display: flex;
@@ -45,36 +47,55 @@
     display: flex;
     flex-direction: column;
 }
+.Lyrics {
+    border: 5px solid black;
+    margin-top: 20px;
+    width: 90%;
+    height: 60% ;
+}
+
+/* Trên */
 .search {
     position: absolute;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 80%;
     position: fixed;
     height: 50px;
     z-index: 1;
     background-color: #f7cad0;
     padding: 14px ;
-    padding-left: 100px;
+    padding-left: 10px;
+    display: flex;
 }
-input {
+.findText {
     width: 80%;
     height: 30px;
     border-radius: 20px 0 0px 20px;
     padding-left: 10px;
     border: none;
 }
-button {
+.find {
     width: 10%;
     height: 30px;
-    border-radius: 0 20px 20px 0 ;
+    padding-left: 10px;
     border: none;
 }
+.avarta {
+    padding-left: 10px;
+    border: none;
+    size: ;
+}
+.fa-solid fa-user {
+    size: 9cm;
+}
+
+/* Bên phải */
 .body {
     position: absolute;
     right: 0;
     top: 50px;
-    width: 70%;
+    width: 80%;
     background-color: #f7cad0;
     font-family: 'Poppins' , sans-serif;
 }
@@ -190,3 +211,4 @@ img:hover {
     margin: 50px;
     height: 350px;
 }
+
