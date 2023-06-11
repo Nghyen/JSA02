@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: 0.5px solid #d6d2d2;
 }
 .picture {
     display: flex;
@@ -86,10 +87,6 @@
     border: none;
     size: ;
 }
-.fa-solid fa-user {
-    size: 9cm;
-}
-
 /* Bên phải */
 .body {
     position: absolute;
@@ -102,11 +99,25 @@
 .hothit {
     margin: 50px;
     height: 350px;
-
 }
 .new {
     margin: 50px;
     height: 350px;
+}
+.Billboard {
+    margin: 50px;
+    height: 350px;
+    width: 90%;
+    height: 300px;
+    margin-top: 15px;
+    list-style: none;
+    margin: 50px;
+    overflow: hidden;
+}
+.Billboard.songs {
+    display: flex;
+    width: 100%;    
+    overflow-x: scroll;
 }
 .todayhits {
     border: 1px solid orange;

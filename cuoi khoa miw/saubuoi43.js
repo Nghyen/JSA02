@@ -49,9 +49,10 @@ LoginForm.addEventListener("submit",(e) =>{
         password:document.getElementById("pswdlogin").value
     }
     if (checkLogin(loginInfor)){
-        console.log("Đăng nhập thành công");
+        alert("Đăng nhập thành công");
+        location.href = "main.html";
     } else {
-        console.log("Đăng nhập thất bại");
+        alert("Vui lòng kiểm tra lại Email hoặc mật khẩu");
     }
 })
 
@@ -67,5 +68,5 @@ function checkLogin(loginInfor) {
             return true;
         }
     }
-    return false;}
+    return false;
 }

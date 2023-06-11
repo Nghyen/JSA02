@@ -210,7 +210,8 @@ function addToCard(name) {
     for (i = 0; i< carts.length; i++) {
         if (carts[i].name == name){
             carts[i].quantity += 1;
-            console.log(carts);
         }
-    }
+    } 
+
+    localStorage.setItem("carts", JSON.stringify(carts));
 }

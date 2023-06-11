@@ -229,27 +229,58 @@ function seekUpdate() {
 loadTrack(track_index);
 
 //LYRICS
-const url = 'https://l-yrics.p.rapidapi.com/?song=Ashes&artist=Stellar';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '73b7d28d60msh203041ceb7dcf6ep189174jsn30a3067fa147',
-		'X-RapidAPI-Host': 'l-yrics.p.rapidapi.com'
-	}
-};
+// let urlLyric = 'https://l-yrics.p.rapidapi.com/?song=Ashes&artist=Stellar';
+// const optionsLyric = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': '73b7d28d60msh203041ceb7dcf6ep189174jsn30a3067fa147',
+//         'X-RapidAPI-Host': 'l-yrics.p.rapidapi.com'
+//     }
+// };
 
-fetch(url,options).then((respons) => {
-    return response.json();
-}).then((data) => {
-    
-});
+// fetch(urlLyric, optionsLyric).then((respons) => {
+//     return response.json();
+// }).then((data) => {
+
+// });
 
 //WEEKLY HOT
-const url = 'https://billboard2.p.rapidapi.com/billboard_global_200?date=2020-09-19';
-const options = {
+let urlHot = 'https://billboard3.p.rapidapi.com/hot-100?date=2022-07-07&range=1-10';
+let optionsHot = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '73b7d28d60msh203041ceb7dcf6ep189174jsn30a3067fa147',
-		'X-RapidAPI-Host': 'billboard2.p.rapidapi.com'
+		'X-RapidAPI-Key': 'bcd30e9e68mshe52dde6e3382636p1ab019jsn5c62a5a88754',
+		'X-RapidAPI-Host': 'billboard3.p.rapidapi.com'
 	}
 };
+fetch(urlHot, optionsHot).then((response) => {
+    return response.json();
+}).then((data) => {
+    displayHot(data)
+});
+function displayHot(data) {
+    for (let i = 0; i < data.length; i++) {
+        let songs = document.createElement("div");
+        songs.classList.add("songs");
+
+        let li = document.createElement("li");
+        li.classList.add("songItem");
+        songs.appendChild(li);
+
+        let img_play = document.createElement("div");
+        img_play.classList.add("img_play");
+
+        let img = document.createElement("img");
+        img.src = data[i].image;
+
+        img_play.appendChild(img);
+        li.appendChild(img_play)
+
+        let h5 = document.createElement("h5");
+        h5.innerText = data[i].title;
+        li.appendChild(h5);
+        console.log(li);
+        document.getElementById("Billboard").appendChild(songs);
+        
+    }
+}

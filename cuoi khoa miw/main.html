@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,27 +19,27 @@
         <div class="playlist">
             <div class="picture">
                 <!-- Bài hát đang phát -->
-                    <div class="track-art">
-                        <img src="" alt="">
-                    </div>
-                    <div class="track-name">Track Name</div>
-                    <div class="track-artist">Track Artist</div>
+                <div class="track-art">
+                    <img src="" alt="">
+                </div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
             </div>
 
-                <!-- Nút play back pre -->
-                <div class="buttons">
-                    <div class="prev-track" onclick="prevTrack()">
-                        <i class="fa fa-step-backward fa-2x"></i>
-                    </div>
-                    <div class="playpause-track" onclick="playpauseTrack()">
-                        <i class="fa fa-play-circle fa-3x"></i>
-                    </div>
-                    <div class="next-track" onclick="nextTrack()">
-                        <i class="fa fa-step-forward fa-2x"></i>
-                    </div>
+            <!-- Nút play back pre -->
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
                 </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-3x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+            </div>
 
-                
+
             <!-- Âm lượng, thời lượng -->
             <div class="slider_container">
                 <div class="current-time">00:00</div>
@@ -72,94 +73,96 @@
 
     <!-- Tìm kiếm, đăng nhập, đăng ký -->
     <div class="search">
-        <input class="findText" type="text" placeholder="Tìm kiếm"> 
+        <input class="findText" type="text" placeholder="Tìm kiếm">
         <button class="find">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <div class="sign">
-            <a class="avarta" href="form/saubuoi43.html">
+            <a class="avarta" href="saubuoi43.html">
                 <i class="fa-solid fa-user"></i>
             </a>
         </div>
     </div>
-
-    <!-- Bài hát được gợi ý -->
+    <!-- Bài hát được gợi ý  -->
     <div class="body">
+        <div id="Billboard" class="Billboard">
+            <h2>Hot Billboard Today</h2>
+        </div>
         <div class="hothit">
-            <h2>Women's Day</h2>
+            <h2>Feminism</h2>
             <div class="songs">
-            <li class="songItem">
-                <div class="img_play">
-                    <img src="image/1.jpg" alt="">
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                </div>
-                <h5>All about that bass
-                    <br>
-                    <div class="subtitle"></div>
-                </h5>
-            </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="image/1.jpg" alt="">
+                        <!-- <i class="bi playListPlay bi-play-circle-fill" id="7"></i> -->
+                    </div>
+                    <h5>All about that bass
+                        <br>
+                        
+                    </h5>
+                </li>
 
-            <li class="songItem">
-                <div class="img_play">
-                    <img src="image/2.jpg" id="7"></i>
-                </div>
-                <h5>Price tag
-                    <br>
-                    <div class="subtitle"></div>
-                </h5>
-            </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="image/2.jpg" id="7"></i>
+                    </div>
+                    <h5>Price tag
+                        <br>
+                        <div class="subtitle"></div>
+                    </h5>
+                </li>
 
-            <li class="songItem">
-                <div class="img_play">
-                    <img src="image/3.jpg"></i>
-                </div>
-                <h5>Shake it off
-                    <br>
-                    <div class="subtitle"></div>
-                </h5>
-            </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="image/3.jpg"></i>
+                    </div>
+                    <h5>Shake it off
+                        <br>
+                        <div class="subtitle"></div>
+                    </h5>
+                </li>
 
-            <li class="songItem">
-                <div class="img_play">
-                    <img src="image/4.jpg" alt="">
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                </div>
-                <h5>No boyfriend
-                    <br>
-                    <div class="subtitle"></div>
-                </h5>
-            </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="image/4.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </div>
+                    <h5>No boyfriend
+                        <br>
+                        <div class="subtitle"></div>
+                    </h5>
+                </li>
 
-            <li class="songItem">
-                <div class="img_play">
-                    <img src="image/5.jpg" id="7"></i>
-                </div>
-                <h5>Run the world
-                    <br>
-                    <div class="subtitle"></div>
-                </h5>
-            </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="image/5.jpg" id="7"></i>
+                    </div>
+                    <h5>Run the world
+                        <br>
+                        <div class="subtitle"></div>
+                    </h5>
+                </li>
 
-            <li class="songItem">
-                <div class="img_play">
-                    <img src="image/6.jpg" alt="">
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                </div>
-                <h5>Girl on fire
-                    <br>
-                    <div class="subtitle"></div>
-                </h5>
-            </li>
-            <li class="songItem">
-                <div class="img_play">
-                    <img src="image/7.png" alt="">
-                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                </div>
-                <h5>Wonder Woman
-                    <br>
-                    <div class="subtitle"></div>
-                </h5>
-            </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="image/6.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </div>
+                    <h5>Girl on fire
+                        <br>
+                        <div class="subtitle"></div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="image/7.png" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </div>
+                    <h5>Wonder Woman
+                        <br>
+                        <div class="subtitle"></div>
+                    </h5>
+                </li>
             </div>
         </div>
 
@@ -177,7 +180,7 @@
                         <div class="subtitle"></div>
                     </h5>
                 </li>
-    
+
                 <li class="songItem">
                     <div class="img_play">
                         <img src="image/9.jpg" id="7"></i>
@@ -187,7 +190,7 @@
                         <div class="subtitle"></div>
                     </h5>
                 </li>
-    
+
                 <li class="songItem">
                     <div class="img_play">
                         <img src="image/10.jpg"></i>
@@ -197,7 +200,7 @@
                         <div class="subtitle"></div>
                     </h5>
                 </li>
-    
+
                 <li class="songItem">
                     <div class="img_play">
                         <img src="image/11.jpg" alt="">
@@ -208,7 +211,7 @@
                         <div class="subtitle"></div>
                     </h5>
                 </li>
-    
+
                 <li class="songItem">
                     <div class="img_play">
                         <img src="image/12.jpg" id="7"></i>
@@ -227,15 +230,19 @@
                         <div class="subtitle"></div>
                     </h5>
                 </li>
-            </div>    
+            </div>
         </div>
     </div>
 
     </div>
 
-<!-- JavaScript -->
+
+
+    <!-- JavaScript -->
     <script src="yen.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

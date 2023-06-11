@@ -6,12 +6,12 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	background-color: #f9bec7 ;
 }
 .main{
 	width: 550px;
 	height: 700px;
-	background: rgba(255, 192, 203, 0.444);
+	background-color:#f7cad0;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
@@ -25,7 +25,7 @@ body{
 	height: 100%;
 }
 label{
-	color: #fff;
+	color: #573b8a;
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
@@ -37,7 +37,7 @@ label{
 input{
 	width: 60%;
 	height: 20px;
-	background: #e0dede;
+	background: #fff;
 	justify-content: center;
 	display: flex;
 	margin: 20px auto;
@@ -46,14 +46,14 @@ input{
 	outline: none;
 	border-radius: 5px;
 }
-button{
+.login a{
 	width: 60%;
 	height: 40px;
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
 	color: #fff;
-	background: pink;
+	background: #f191ac;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -62,13 +62,18 @@ button{
 	border-radius: 5px;
 	transition: .2s ease-in;
 	cursor: pointer;
+	border: none;
+}
+.login a:hover {
+	background: #573b8a;
 }
 button:hover{
-	background: red;
+	background: #573b8a;
+	color: #fff;
 }
 .login{
 	height: 460px;
-	background: #eee;
+	background: #ffe4f3;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
@@ -86,4 +91,22 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+button {
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #573b8a;
+	background: #f191ac;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+	border: none;
 }

@@ -15,8 +15,8 @@
 // }
 
 //Array: mảng- dùng để lưu nhiều biến số
-// let nameo = ["1 ", "2", "3", "4"];
-// console.log(nameo);
+let nameo = ["1 ", "2", "3", "4"];
+console.log(nameo);
 // //thêm 1 tên(object) vào name
 // nameo.push("5");
 // console.log(nameo)
@@ -67,47 +67,47 @@
 // delete user.age
 // console.log(user);
 
-let computer = {
-    brand: "Asus",
-    os: "window",
-    ram: "8gb",
-    ssd:"512gb",
-    weight: "108gr",
-    img:"https://thegioipc.vn/uploads/22/10/laptop-asus-l510ma-wb04-1.jpg"
-};
-let computer = {
-    brand: "Macbook",
-    os: "MacOs",
-    ram: "8gb",
-    ssd:"512gb",
-    weight: "108gr",
-    img:"https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(5):fill(white)/fptshop.com.vn/Uploads/Originals/2022/6/7/637901935594127150_macbook-pro-m2-2022-xam-1.jpg"
-};
-let product = document.getElementById ("product");
-product.style="border: 1px solid red","width: 80%","height:80%";
-let img = document.createElement("img");
-img.src= computer.img;
-product.appendChild(img);
+// let computer = {
+//     brand: "Asus",
+//     os: "window",
+//     ram: "8gb",
+//     ssd:"512gb",
+//     weight: "108gr",
+//     img:"https://thegioipc.vn/uploads/22/10/laptop-asus-l510ma-wb04-1.jpg"
+// };
+// let computer = {
+//     brand: "Macbook",
+//     os: "MacOs",
+//     ram: "8gb",
+//     ssd:"512gb",
+//     weight: "108gr",
+//     img:"https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(5):fill(white)/fptshop.com.vn/Uploads/Originals/2022/6/7/637901935594127150_macbook-pro-m2-2022-xam-1.jpg"
+// };
+// let product = document.getElementById ("product");
+// product.style="border: 1px solid red","width: 80%","height:80%";
+// let img = document.createElement("img");
+// img.src= computer.img;
+// product.appendChild(img);
 
-let brand = document.createElement("h3");
-brand.innerText = computer.brand;
-product.appendChild(brand);
+// let brand = document.createElement("h3");
+// brand.innerText = computer.brand;
+// product.appendChild(brand);
 
-let os = document.createElement("p");
-os.innerText = computer.os;
-product.appendChild(os);
+// let os = document.createElement("p");
+// os.innerText = computer.os;
+// product.appendChild(os);
 
-let ram = document.createElement("p");
-ram.innerText = computer.ram;
-product.appendChild(ram);
+// let ram = document.createElement("p");
+// ram.innerText = computer.ram;
+// product.appendChild(ram);
 
-let ssd = document.createElement("p");
-ssd.innerText = computer.ssd;
-product.appendChild(ssd);
+// let ssd = document.createElement("p");
+// ssd.innerText = computer.ssd;
+// product.appendChild(ssd);
 
-let weight = document.createElement("p");
-weight.innerText = computer.weight;
-product.appendChild(weight);
+// let weight = document.createElement("p");
+// weight.innerText = computer.weight;
+// product.appendChild(weight);
 
 
 
