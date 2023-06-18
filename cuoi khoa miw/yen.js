@@ -228,28 +228,13 @@ function seekUpdate() {
 // Load the first track in the tracklist
 loadTrack(track_index);
 
-//LYRICS
-// let urlLyric = 'https://l-yrics.p.rapidapi.com/?song=Ashes&artist=Stellar';
-// const optionsLyric = {
-//     method: 'GET',
-//     headers: {
-//         'X-RapidAPI-Key': '73b7d28d60msh203041ceb7dcf6ep189174jsn30a3067fa147',
-//         'X-RapidAPI-Host': 'l-yrics.p.rapidapi.com'
-//     }
-// };
-
-// fetch(urlLyric, optionsLyric).then((respons) => {
-//     return response.json();
-// }).then((data) => {
-
-// });
 
 //WEEKLY HOT
-let urlHot = 'https://billboard3.p.rapidapi.com/hot-100?date=2022-07-07&range=1-10';
-let optionsHot = {
+const urlHot = 'https://billboard3.p.rapidapi.com/hot-100?date=2023-06-17&range=1-10';
+const optionsHot = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'bcd30e9e68mshe52dde6e3382636p1ab019jsn5c62a5a88754',
+		'X-RapidAPI-Key': '507824361bmshcdfd8840f04699fp1bc339jsn9a7f3f83ff22',
 		'X-RapidAPI-Host': 'billboard3.p.rapidapi.com'
 	}
 };
@@ -260,12 +245,9 @@ fetch(urlHot, optionsHot).then((response) => {
 });
 function displayHot(data) {
     for (let i = 0; i < data.length; i++) {
-        let songs = document.createElement("div");
-        songs.classList.add("songs");
-
         let li = document.createElement("li");
         li.classList.add("songItem");
-        songs.appendChild(li);
+        document.getElementById("songs").appendChild(li);
 
         let img_play = document.createElement("div");
         img_play.classList.add("img_play");
@@ -280,7 +262,39 @@ function displayHot(data) {
         h5.innerText = data[i].title;
         li.appendChild(h5);
         console.log(li);
-        document.getElementById("Billboard").appendChild(songs);
         
+        document.getElementById("Billboard").appendChild(songs);
+
     }
 }
+
+//LYRICS
+const urlLyric = 'https://l-yrics.p.rapidapi.com/?song=flowers&artist=jisoo';
+const optionsLyric = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'bcd30e9e68mshe52dde6e3382636p1ab019jsn5c62a5a88754',
+		'X-RapidAPI-Host': 'l-yrics.p.rapidapi.com'
+	}
+};
+
+fetch(urlLyric, optionsLyric).then((response) => {
+    return response.json();
+}).then((data) => {
+        displayLyric(data)
+});
+function displayLyric(data) {
+    let h6 = document.createElement("h5");
+    h6.innerText = data.lyrics;
+    
+    document.getElementById("Lyrics").appendChild(h6);
+}
+
+// //CHOOSE TRACK
+// function chooseTrack (track_list) {
+//     let imagePlay = getElementById("img_play");
+//     imagePlay.onclick = function(){
+//         curr_track.play();
+//         isPlaying = true;
+//     }
+// } 

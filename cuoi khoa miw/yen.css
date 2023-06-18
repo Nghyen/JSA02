@@ -8,6 +8,9 @@
 }
 
 /* Bên trái */
+div {
+    
+}
 .wrapper {
     position: relative;
 }
@@ -33,6 +36,10 @@
     align-items: center;
     margin-bottom: 40px;
     margin-top: 10%;
+
+}
+.ImagePlay {
+    
 }
 .buttons {
     display: flex;
@@ -96,6 +103,18 @@
     background-color: #f7cad0;
     font-family: 'Poppins' , sans-serif;
 }
+.artistImg {
+    width: 20%;
+    height: 80%;
+    border-radius: 5%;
+    
+}
+.pickItem {
+    list-style: none;
+}
+.Picks {
+    display: block;
+}
 .hothit {
     margin: 50px;
     height: 350px;
@@ -112,7 +131,7 @@
     margin-top: 15px;
     list-style: none;
     margin: 50px;
-    overflow: hidden;
+    -ms-overflow-style: none;
 }
 .Billboard.songs {
     display: flex;
@@ -132,51 +151,6 @@
     height: 57%;
     margin: 20px;
 }
-/* .buttons {
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin: 20px;
-    margin-left: 40px ;
-
-}
-.picture {
-    border: 1px solid black;
-    border: 1px solid ffc8dd ;
-    padding-top: 30px;
-    height: 25%;
-    margin: 20px;
-    padding: 1px;
-
-}
-.slider_container {
-    display: block;
-    width: 250px;
-    
-
-}
-.seek_slider {
-    width: 400px;
-    margin: 2px;
-}
-
-.details {
-    display: block;
-    justify-content: space-between;
-    padding: 1px;
-}
-.track-name {
-    margin-left: 130px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.track-artist {
-    margin-left: 130px;
-}
-.track-art {
-    
-
-} */
 .hothit{
     width: 90%;
     height: 300px;
@@ -189,22 +163,40 @@ img {
     width: 190px;
     height: 190px;
     margin-left: 1px;
+    transform: scale(1);
+    transition: all 0.2s;
 }
-img:hover {
-    width: 200px;
-    height: 200px;
-}
+
 .songItem {
     margin-top: 20px;
     margin-left: 10px;
     font-size: 20px;
     margin-right: 10px;
+    transform: scale(1);
+    transition: all 0.2s;
+}
+.songItem:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
 }
 .songs {
     display: flex;
     width: 100%;    
+    overflow-y: hidden;
     overflow-x: scroll;
+    scrollbar-width: none;
 }
+.artist{
+    display: flex;
+    width: 100%;
+}
+.artistItem {
+    margin-left: 10px;
+    margin-top: 20px;
+    list-style: none;
+    border-radius: ;
+}
+
 .new {
     width: 90%;
     height: 300px;
