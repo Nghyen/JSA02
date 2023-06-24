@@ -187,6 +187,7 @@ div {
     margin-left: 50px;
     margin-right: 50px;
     margin: 50px;
+    
 }
 .Picks {
     display: flex;
@@ -195,6 +196,8 @@ div {
     margin-left: 0px;
     overflow-y: hidden;
     scroll-behavior:auto ;
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 .imgPick{
     size: 100%;
@@ -359,4 +362,29 @@ div {
     overflow-x: scroll;
     margin-right: 30px;
     margin-left: 30px;
+}
+.imgRadio {
+    height: 190px;
+    margin-top: 15px;
+    border-radius: 9.5%;
+}
+.radioItem {
+    list-style: none;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    transform: scale(1);
+    transition: all 0.2s;
+}
+.radioItem:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+.radio {
+    margin-left: 50px;
+    
+}
+.Radio {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
