@@ -6,15 +6,15 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background-color: #f9bec7 ;
+	background-color: #FAF0E4 ;
 }
 .main{
 	width: 550px;
 	height: 700px;
-	background-color:#f7cad0;
+	background-color:#FFDEDE;
 	overflow: hidden;
 	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
+	box-shadow: 5px 20px 50px pink;
 }
 #chk{
 	display: none;
@@ -53,7 +53,7 @@ input{
 	justify-content: center;
 	display: block;
 	color: #fff;
-	background: #f191ac;
+	background: #FF8551;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -73,7 +73,7 @@ button:hover{
 }
 .login{
 	height: 460px;
-	background: #ffe4f3;
+	background: #9BCDD2;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
@@ -98,8 +98,8 @@ button {
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
-	color: #573b8a;
-	background: #f191ac;
+	color: #fff;
+	background: #FF8551;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;

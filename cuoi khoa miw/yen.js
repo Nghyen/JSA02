@@ -101,6 +101,252 @@ let track_list = [
         image: "./image/13.jpg",
         path: "./music/13.mp3"
     },
+    {
+        name: "Tình Yêu Đến Sau",
+        artist: "Myra Trần",
+        image: "./image/14.jpg",
+        path: "./music/14.mp3"
+    },
+    {
+        name: "Cám Dỗ",
+        artist: "Myra Trần",
+        image: "./image/15.jpg",
+        path: "./music/15.mp3"
+    },
+    {
+        name: "Như Những Phút Ban Đầu",
+        artist: "Myra Trần",
+        image: "./image/16.jpg",
+        path: "./music/16.mp3"
+    },
+    {
+        name: "Dừng Yêu (feat. Negav)",
+        artist: "Myra Trần",
+        image: "./image/17.jpg",
+        path: "./music/17.mp3"
+    },
+    {
+        name: "Giữa Đêm Bật Khóc",
+        artist: "Myra Trần",
+        image: "./image/18.jpg",
+        path: "./music/18.mp3"
+    },
+    {
+        name: "Anh Chưa Thương Em Đến Vậy Đâu",
+        artist: "Myra Trần",
+        image: "./image/19.jpg",
+        path: "./music/19.mp3"
+    },
+    {
+        name: "Trong Trí Nhớ Của Anh (Cover)",
+        artist: "Myra Trần",
+        image: "./image/20.jpg",
+        path: "./music/20.mp3"
+    },
+    {
+        name: "Bạn Ơi",
+        artist: "Myra Trần",
+        image: "./image/21.jpg",
+        path: "./music/21.mp3"
+    },
+    {
+        name: "Bạn Ơi",
+        artist: "Myra Trần",
+        image: "./image/21.jpg",
+        path: "./music/21.mp3"
+    },
+    {
+        name: "Bước Qua Nhau",
+        artist: "Vũ.",
+        image: "./image/22.jpg",
+        path: "./music/22.mp3"
+    },
+    {
+        name: "Đợi",
+        artist: "Vũ.",
+        image: "./image/23.jpg",
+        path: "./music/24.mp3"
+    },
+    {
+        name: "Lời Yêu Em",
+        artist: "Vũ.",
+        image: "./image/24.jpg",
+        path: "./music/24.mp3"
+    },
+    {
+        name: "Bước Qua Mùa Cô Đơn",
+        artist: "Vũ.",
+        image: "./image/25.jpg",
+        path: "./music/25.mp3"
+    },
+    {
+        name: "Vì Anh Đâu Có Biết",
+        artist: "Madihu, Vũ.",
+        image: "./image/26.jpg",
+        path: "./music/26.mp3"
+    },
+    {
+        name: "Đông Kiếm Em",
+        artist: "Vũ.",
+        image: "./image/27.jpg",
+        path: "./music/27.mp3"
+    },
+    {
+        name: "Lạ Lùng",
+        artist: "Vũ.",
+        image: "./image/28.jpg",
+        path: "./music/28.mp3"
+    },
+    {
+        name: "Anh Nhớ Ra (feat. TRANG)",
+        artist: "Vũ. ",
+        image: "./image/29.jpg",
+        path: "./music/29.mp3"
+    },
+    {
+        name: "Thương Anh Hơn Tình Yêu",
+        artist: "GiGi Hương Giang ",
+        image: "./image/30.jpg",
+        path: "./music/30.mp3"
+    },
+    {
+        name: "Vừa Đi Vừa Khóc",
+        artist: "GiGi Hương Giang, KayC ",
+        image: "./image/31.jpg",
+        path: "./music/31.mp3"
+    },
+    {
+        name: "Mãi Chẳng Ai Yêu Mình",
+        artist: "GiGi Hương Giang ",
+        image: "./image/32.jpg",
+        path: "./music/32.mp3"
+    },
+    {
+        name: "Ngày Một Người Đi Xa (feat. Koo)",
+        artist: "GiGi Hương Giang ",
+        image: "./image/33.jpg",
+        path: "./music/33.mp3"
+    },
+    {
+        name: "Chuyện Mưa",
+        artist: "GiGi Hương Giang, Trung Quân ",
+        image: "./image/34.jpg",
+        path: "./music/34.mp3"
+    },
+    {
+        name: "Du Hành Vào Tâm Trí",
+        artist: "GiGi Hương Giang ",
+        image: "./image/35.jpg",
+        path: "./music/35.mp3"
+    },
+    {
+        name: "Có Em Là Nhà (Remake)",
+        artist: "GiGi Hương Giang ",
+        image: "./image/36.jpg",
+        path: "./music/36.mp3"
+    },
+    {
+        name: "Mashup Tình Đầu Cô Đơn",
+        artist: "GiGi Hương Giang ",
+        image: "./image/37.jpg",
+        path: "./music/37.mp3"
+    },
+    {
+        name: "Anh Tự Do Nhưng Cô Đơn",
+        artist: "Trung Quân",
+        image: "./image/38.jpg",
+        path: "./music/38.mp3"
+    },
+    {
+        name: "Chiều Nay Không Có Mưa Bay",
+        artist: "Trung Quân",
+        image: "./image/39.jpg",
+        path: "./music/39.mp3"
+    },
+    {
+        name: "Trót Yêu",
+        artist: "Trung Quân",
+        image: "./image/40.jpg",
+        path: "./music/40.mp3"
+    },
+    {
+        name: "Và Ngày Nào Đó",
+        artist: "Trung Quân",
+        image: "./image/41.jpg",
+        path: "./music/41.mp3"
+    },
+    {
+        name: "Buồn Không Thể Buông",
+        artist: "Trung Quân",
+        image: "./image/42.jpg",
+        path: "./music/42.mp3"
+    },
+    {
+        name: "Tình Nào Không Như Tình Đầu",
+        artist: "Trung Quân",
+        image: "./image/43.jpg",
+        path: "./music/43.mp3"
+    },
+    {
+        name: "Tự Tình 2",
+        artist: "Trung Quân",
+        image: "./image/44.jpg",
+        path: "./music/44.mp3"
+    },
+    {
+        name: "Ai Chung Tình Được Mãi",
+        artist: "Trung Quân",
+        image: "./image/45.jpg",
+        path: "./music/45.mp3"
+    },
+    {
+        name: "Bí Mật Nhỏ",
+        artist: "B Ray",
+        image: "./image/46.jpg",
+        path: "./music/46.mp3"
+    },
+    {
+        name: "Xin Đừng Nhấc Máy (feat. Masew)",
+        artist: "B Ray & Han Sara"
+        image: "./image/47.jpg",
+        path: "./music/47.mp3"
+    },
+    {
+        name: "Thiêu Thân",
+        artist: "B Ray, Sofia, Châu Đăng Khoa, Masew",
+        image: "./image/48.jpg",
+        path: "./music/48.mp3"
+    },
+    {
+        name: "Do For Love (feat. AMEE)",
+        artist: "B Ray",
+        image: "./image/49.jpg",
+        path: "./music/49.mp3"
+    },
+    {
+        name: "Cao Ốc 20",
+        artist: "B Ray",
+        image: "./image/50.jpg",
+        path: "./music/50.mp3"
+    },
+    {
+        name: "Con Trai Cưng",
+        artist: "B Ray",
+        image: "./image/51.jpg",
+        path: "./music/51.mp3"
+    },
+    {
+        name: "Dư Tiền",
+        artist: "B Ray",
+        image: "./image/52.jpg",
+        path: "./music/52.mp3"
+    },
+    {
+        name: "Hoàn Hảo",
+        artist: "B Ray",
+        image: "./image/53.jpg",
+        path: "./music/53.mp3"
+    },
 ];
 
 function loadTrack(track_index) {
@@ -113,8 +359,7 @@ function loadTrack(track_index) {
     curr_track.load();
 
     // Update details of the track
-    track_art.style.backgroundImage =
-        "url(" + track_list[track_index].image + ")";
+    track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
     track_name.textContent = track_list[track_index].name;
     track_artist.textContent = track_list[track_index].artist;
 
@@ -290,11 +535,4 @@ function displayLyric(data) {
     document.getElementById("Lyrics").appendChild(h6);
 }
 
-// //CHOOSE TRACK
-// function chooseTrack (track_list) {
-//     let imagePlay = getElementById("img_play");
-//     imagePlay.onclick = function(){
-//         curr_track.play();
-//         isPlaying = true;
-//     }
-// } 
+

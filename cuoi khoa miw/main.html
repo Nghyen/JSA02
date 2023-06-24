@@ -29,22 +29,26 @@
             <!-- Nút play back pre -->
             <div class="buttons">
                 <div class="prev-track" onclick="prevTrack()">
-                    <i class="fa fa-step-backward fa-2x"></i>
+                    <i class="fa fa-step-backward fa-4x"></i>
                 </div>
                 <div class="playpause-track" onclick="playpauseTrack()">
-                    <i class="fa fa-play-circle fa-3x"></i>
+                    <i class="fa fa-play-circle fa-6x"></i>
                 </div>
                 <div class="next-track" onclick="nextTrack()">
-                    <i class="fa fa-step-forward fa-2x"></i>
+                    <i class="fa fa-step-forward fa-4x"></i>
                 </div>
             </div>
 
 
             <!-- Âm lượng, thời lượng -->
-            <div class="slider_container">
+            <div class="number">
                 <div class="current-time">00:00</div>
-                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
                 <div class="total-duration">00:00</div>
+            </div>
+            <div class="slider_container">
+
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
             </div>
 
             <div class="slider_container">
@@ -84,40 +88,65 @@
         </div>
     </div>
     <!-- Bài hát được gợi ý  -->
-   
+
     <div class="body">
         <div class="TopPicks">
             <h1>Top Picks</h1>
             <div class="Picks">
-                <li class="pickItem">
-                    <a href="Myra.html" class="click_action" aria-label="Myra Trần">
-                        <img class="artistImg" src="https://newsmd2fr.keeng.net/tiin/archive/imageslead/2022/11/24/90_59fa4ae9e961a036a4f14a432f2a5d00.jpg" alt="">
-                    </a>
-                </li>
+                <a href="Myra.html" class="pickItem" style="background-color:
+                #8ecae6 ; background-color: opacity: 0.1;text-decoration: none">
+                    <div class="imgPick"><img class="artistImg"
+                            src="https://newsmd2fr.keeng.net/tiin/archive/imageslead/2022/11/24/90_59fa4ae9e961a036a4f14a432f2a5d00.jpg"
+                            alt="" ></div>
+                    <div  class="click_action" aria-label="Myra Trần">
+                        <p style="font-size: 15px; color: white;">Myra Trần</p>
+                    </div>
+                    <p class="hint" style="font-size: 12px; color: whitesmoke;;">Tình Yêu Đến Sau, Cám Dỗ, Như Những
+                        Phút Ban Đầu, Dừng Yêu, Giữa Đêm Bật Khóc,... </p>
 
-                <li class="pickItem">
-                    <a href="Vu.html" class="click_action" aria-label="Vũ">
-                        <img class="artistImg" src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/306034004_634702674684688_5334611510526670465_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=za-Bi7dlRAsAX9m0ZAi&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfBEIjBWvsH-2ADWXsr_p2jC5DjkASxTu47DviPPDSPQ1A&oe=6493C20E" alt="">
-                    </a>
-                </li>
+                </a>
 
-                <li class="pickItem">
-                    <a href="GiGi.html" class="click_action" aria-label="GiGi Hương Giang">
-                        <img class="artistImg" src="https://image-us.eva.vn/upload/4-2021/images/2021-11-08/gigi-huong-giang-lam-moi-lien-khuc-4-mua-tai-hien-hoi-uc-xuan-ha-thu-dong-day-cam-xuc-1-1636369331-667-width660height990.jpg" alt="">
-                    </a>
-                </li>
+                <a href="Vu.html" class="pickItem" style="background-color:
+                #01463A ;text-decoration: none">
+                    <div class="imgpick"><img class="artistImg"
+                            src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/306034004_634702674684688_5334611510526670465_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=za-Bi7dlRAsAX9m0ZAi&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfBEIjBWvsH-2ADWXsr_p2jC5DjkASxTu47DviPPDSPQ1A&oe=6493C20E"
+                            alt=""></div>
+                    <div   aria-label="Vũ">
+                        <p style="font-size: 15px; color: white; margin-left: 75px;">Vũ.</p>
+                    </div>
+                    <p class="hint" style="font-size: 12px; color: whitesmoke;">Bước Qua Nhau, Đợi, Lời Yêu Em, Bước Qua Mùa Cô Đơn,...</p>
+                </a>
 
-                <li class="pickItem">
-                    <a href="TrungQuan.html" class="click_action" aria-label="Trung Quân Idol">
-                        <img class="artistImg" src="https://nld.mediacdn.vn/291774122806476800/2022/6/19/trung-quan-idol-16556052672881881396864.jpg" alt="">
-                    </a>
-                </li>
+                <a href="GiGi.html" class="pickItem" style="background-color:#E7A74F ;text-decoration: none">
+                    <div class="imgPick"><img class="artistImg"
+                            src="https://image-us.eva.vn/upload/4-2021/images/2021-11-08/gigi-huong-giang-lam-moi-lien-khuc-4-mua-tai-hien-hoi-uc-xuan-ha-thu-dong-day-cam-xuc-1-1636369331-667-width660height990.jpg"
+                            alt=""></div>
+                    <div  aria-label="GiGi Hương Giang">
+                        <p style="font-size: 15px; color: white; margin-left: 17px;">GiGi Hương Giang</p>
+                    </div>
+                    <p class="hint" style="font-size: 12px; color: whitesmoke;">Thương Anh Hơn Tình Yêu, Vừa Đi Vừa Khóc, MãI Chẳng Ai Yêu Mình,...</p>
+                </a>
 
-                <li class="pickItem">
-                    <a href="BRay.html" class="click_action" aria-label="BRay">
-                        <img class="artistImg" src="https://duyendangvietnam.net.vn/public/uploads/file1s/pv_Thanh_Toan/T05%20-%202023/BRAY-110.jpeg" alt="">
-                    </a>
-                </li>
+                <a href="TrungQuan.html" class="pickItem" style="background-color: #812B1D;text-decoration: none">
+                    <div class="imgPick"><img class="artistImg"
+                            src="https://nld.mediacdn.vn/291774122806476800/2022/6/19/trung-quan-idol-16556052672881881396864.jpg"
+                            alt=""></div>
+                    <div   aria-label="Trung Quân Idol">
+                        <p style="font-size: 15px; color: white; margin-left: 25px;">Trung Quân</p>
+                    </div>
+                    <p class="hint" style="font-size: 12px; color: whitesmoke;">Anh Tự Do Nhưng Cô Đơn, Chiều Nay Không Có Mưa Bay, Trót Yêu, Và Ngày Nào Đó, Buồn Không Thể Buông,...</p>
+                </a>
+
+                <a href="BRay.html" class="pickItem" style="background-color: black;text-decoration: none">
+                    <div class="imgPick"><img class="artistImg">
+                            src="https://duyendangvietnam.net.vn/public/uploads/file1s/pv_Thanh_Toan/T05%20-%202023/BRAY-110.jpeg"
+                            alt=""></div>
+                    <div  aria-label="B Ray">
+                        <p style="font-size: 15px; color: white; margin-left: 65px;">B Ray</p>
+                    </div>
+                    <p class="hint" style="font-size: 12px; color: whitesmoke;">Bí Mật Nhỏ, Xin Đừng Nhấc Máy, Thiêu Thân, Do For Love,...</p>                          
+
+                </a>
             </div>
         </div>
         <div id="Billboard" class="Billboard">
@@ -131,7 +160,7 @@
             <div class="songs">
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/1.jpg" alt="" onclick="loadTrack(0)">
+                        <img class="imageRight" src="image/1.jpg" alt="" onclick="loadTrack(0)">
                         <!-- <i class="bi playListPlay bi-play-circle-fill" id="7"></i> -->
                     </div>
                     <h5>All about that bass
@@ -142,7 +171,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/2.jpg" id="7" onclick="loadTrack(1)"></i>
+                        <img class="imageRight" src="image/2.jpg" id="7" onclick="loadTrack(1)"></i>
                     </div>
                     <h5>Price tag
                         <br>
@@ -152,7 +181,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/3.jpg" onclick="loadTrack(2)"></i>
+                        <img class="imageRight" src="image/3.jpg" onclick="loadTrack(2)"></i>
                     </div>
                     <h5>Shake it off
                         <br>
@@ -162,7 +191,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/4.jpg" alt="" onclick="loadTrack(3)">
+                        <img class="imageRight" src="image/4.jpg" alt="" onclick="loadTrack(3)">
                         <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
                     </div>
                     <h5>No boyfriend
@@ -173,7 +202,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/5.jpg" id="7" onclick="loadTrack(4)"></i>
+                        <img class="imageRight" src="image/5.jpg" id="7" onclick="loadTrack(4)"></i>
                     </div>
                     <h5>Run the world
                         <br>
@@ -183,7 +212,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/6.jpg" alt="" onclick="loadTrack(5)">
+                        <img class="imageRight" src="image/6.jpg" alt="" onclick="loadTrack(5)">
                         <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
                     </div>
                     <h5>Girl on fire
@@ -193,7 +222,7 @@
                 </li>
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/7.png" alt="" onclick="loadTrack(6)">
+                        <img class="imageRight" src="image/7.png" alt="" onclick="loadTrack(6)">
                         <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
                     </div>
                     <h5>Wonder Woman
@@ -210,7 +239,7 @@
             <div class="songs">
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/8.jpg" alt="" onclick="loadTrack(7)">
+                        <img class="imageRight" src="image/8.jpg" alt="" onclick="loadTrack(7)">
                         <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
                     </div>
                     <h5>Giấc mơ khác
@@ -221,7 +250,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/9.jpg" id="7" onclick="loadTrack(8)"></i>
+                        <img class="imageRight" src="image/9.jpg" id="7" onclick="loadTrack(8)"></i>
                     </div>
                     <h5>tinhdautinhdautinhdau
                         <br>
@@ -231,7 +260,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/10.jpg" alt="" onclick="loadTrack(9)"></i>
+                        <img class="imageRight" src="image/10.jpg" alt="" onclick="loadTrack(9)"></i>
                     </div>
                     <h5>Trên những đám mây
                         <br>
@@ -241,7 +270,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/11.jpg" alt="" onclick="loadTrack(10)">
+                        <img class="imageRight" src="image/11.jpg" alt="" onclick="loadTrack(10)">
                         <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
                     </div>
                     <h5>Va vào giai điệu này
@@ -252,7 +281,7 @@
 
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/12.jpg" id="7" onclick="loadTrack(11)"></i>
+                        <img class="imageRight" src="image/12.jpg" id="7" onclick="loadTrack(11)"></i>
                     </div>
                     <h5>You
                         <br>
@@ -261,7 +290,7 @@
                 </li>
                 <li class="songItem">
                     <div class="img_play">
-                        <img src="image/13.jpg" id="7" onclick="loadTrack(12)"></i>
+                        <img class="imageRight" src="image/13.jpg" id="7" onclick="loadTrack(12)"></i>
                     </div>
                     <h5>11:11
                         <br>
